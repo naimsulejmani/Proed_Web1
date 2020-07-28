@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inserting a table using "table" tag</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 20px;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        
+        <thead>         <!-- thead tag starts from here -->
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">User Id</th>
+            </tr>
+        </thead>        <!-- thead tag ends here -->
+
+        <tbody>         
+            <tr>
+                <td>naim Sulejmani</td>
+                <td>naim_sulejmani</td>
+            </tr>
+            <tr>
+                <td>Syle Sylani</td>
+                <td>@ssylani</td>
+            </tr>
+        </tbody>         <!-- tbody tag ends here -->
+        <tfoot style="color:blue">          <!-- tfoot tag starts from here -->
+            <tr>
+                <th>Total Users</th>
+                <th>2</th>
+            </tr>
+    </tfoot>            <!-- tfoot tag ends here -->
+</body>
+
+</html>
