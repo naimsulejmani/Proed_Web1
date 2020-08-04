@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- 
+    Method: tregon se si behet kerkesa 
+    1. GET -> parametrat shkruhen ne Address bar -> thirrja behet me atributet e ruajtuna ne URL
+    2. POST -> parametrat shkruhen ne body (trup) te kerkeses e jo ne URL -> te fshehura
+
+    Action:
+    1. Tregon se cilen action/metode ne site ku je apo ne sajte tjeter ki me thirre
+ -->
+
+ <form method="GET" action="https://search.yahoo.com/search">
+    <fieldset>
+        <legend>Kerko ne Yahoo!</legend>
+        <input type='search' name='p' id='test'/>
+        <button type="submit">Submit</button>
+    </fieldset>
+   
+
+ </form>
+    <form method="POST" action="register.php">
+        <!-- <div>
+            <label for="emri">Emri:</label>
+            <input type="text" placeholder="Shkruaj emrin ketu" id="emri" name="emri" />
+        </div> -->
+        <!-- 
+            1. break
+            2. div
+            3. p
+            4. table
+        -->
+        <!-- <div> <label for="mbiemri">Mbiemri:</label>
+            <input type="text" placeholder="Shkruaj mbiemrin" name="mbiemri" id="mbiemri" />
+        </div> -->
+        
+        <hr/>
+<fieldset>
+    <legend>Formulari per regjistrim civil!</legend>
+        <table>
+            <tr>
+                <td> <label for="emri">Emri:</label></td>
+                <td><input type="text" placeholder="Shkruaj emrin ketu" id="emri" name="emri" /></td>
+            </tr>
+            <tr>
+                <td><label for="mbiemri">Mbiemri:</label></td>
+                <td> <input type="text" placeholder="Shkruaj mbiemrin" name="mbiemri" id="mbiemri" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ditelindja">Datalindjes</label>
+                </td>
+                <td>
+                    <input type="date" name="ditelindja" id="ditelindja">
+                </td>
+            </tr>
+          
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="photo">Upload Photo</label>
+                </td>
+                <td>
+                    <input type="file" name="photo" id="photo" accept="image/*" multiple>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Hidden Input Type:</label>
+                </td>
+                <td>
+                    <!--Perdoret per me ruajt dicka qe mos me pa shfrytezuesi por qe eshte pjese e formularit -->
+                    <input type="hidden" name="hiddenId" id="hiddenId">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="vite">Minimum vitet</label>
+                </td>
+                <td>
+                    <input type="number" name="vite" id="vite" value="18" min="18" max="64" step="2"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <input type='radio' id='genderM' name="gender" value="M" checked> Mashkull <br>
+                    <input type='radio' id='genderF' name="gender" value="F"> Femer <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='prano'>A pranon!?</label>
+                </td>
+                <td>
+                    <input type="checkbox" id='prano' name="prano" checked/> I pranoj kushtet e perdorimit!
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for='hobi'>Zgjidh hobite?</label>
+                </td>
+                <td>
+                    <p><input type="checkbox" id='hobi1' name="hobi" /> Sporti</p>
+                    <p><input type="checkbox" id='hobi2' name="hobi" /> Muzika</p>
+                    <p><input type="checkbox" id='hobi3' name="hobi" /> Hiking</p>
+                    <p><input type="checkbox" id='hobi4' name="hobi" /> Teater</p>
+                    <p><input type="checkbox" id='hobi5' name="hobi" /> Leximi</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='ngjyra'>Zgjidh ngjyren!?</label>
+                </td>
+                <td>
+                    <input type="color" id='ngjyra' name="ngjyra" /> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='tel'>Tel:</label>
+                </td>
+                <td>
+                    <input type="tel" id='tel' name="tel" disabled/> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='rangu'>Rangu i pageses (150-1000):</label>
+                </td>
+                <td>
+                    <input type="range" id='rangu' name="rangu" min="150" max="1000" step="50" value="150"/> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='time'>Koha paraqitjes:</label>
+                </td>
+                <td>
+                    <input type="time" id='time' name="time"/> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='datetime'>Data Koha paraqitjes:</label>
+                </td>
+                <td>
+                    <input type="datetime-local" id='datetime' name="datetime"/> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='week'>Week:</label>
+                </td>
+                <td>
+                    <input type="week" id='week' name="week"/> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='url'>Url:</label>
+                </td>
+                <td>
+                    <input type="url" id='url' name="url" value='https://wwww.google.com'/> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='search'>Search:</label>
+                </td>
+                <td>
+                    <input type="search" id='search' name="search"/> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='dropdown'>Zgjidh Nje:</label>
+                </td>
+                <td>
+                    <select name="dropdown" id="dropdown">
+                        <option value="Windows">Microsoft Windows</option>
+                        <option value="MacOS">MAC OS X</option>
+                        <option value="Linux" selected>Linux Ubuntu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='dropdown1'>Zgjidh Nje ose me shume:</label>
+                </td>
+                <td>
+                    <select name="dropdown1" id="dropdown1" multiple>
+                        <option value="Windows">Microsoft Windows</option>
+                        <option value="MacOS">MAC OS X</option>
+                        <option value="Linux" selected>Linux Ubuntu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='filter'>Filtro:</label>
+                </td>
+                <td>
+                    <input type="text" id='filter' name="filter" list='lista'/> 
+                    
+                    <datalist id='lista'>
+                        <option value='Windows XP'/>
+                        <option value='Linux'/>
+                        <option value='Naim Sulejmani'/>
+                        <option value='Bahri Sulejmani'/>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='comment'>Komenti:</label>
+                </td>
+                <td>
+                    <textarea name="comment" id="comment" cols="150" rows="10" readonly >
+                    </textarea>
+                </td>
+            </tr>
+           <tr>
+               <td>
+                   <input type="button" value="Buton i thjeshte"/>
+                   <button type="button"> Button i thjeshte</button>
+               </td>
+               <td>
+                   <button type="reset">Reset</button>
+                   <button type="submit">Submit</button>
+               </td>
+           </tr>
+            
+        </table>
+    </fieldset>
+    </form>
+
+</body>
+
+</html>
