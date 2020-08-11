@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p#test1 {
+            color:red;
+        }
+        p.para {
+            color:blue;
+            font-size: 50px;
+        }
+        div {
+            font-size: xx-small;
+            /* font-variant: small-caps; */
+            font-stretch: ultra-expanded;
+            color: #48195365;
+        }
+
+        /*SELEKTIMI GRUPOR */
+        b, i {
+            background-color: whitesmoke;
+            color:blueviolet;
+        }
+        /*Selektimi me pasardhes*/
+        div p {
+                color:wheat;
+                background-color: darkblue;
+                
+        }
+            /* selektim mix */
+        div p, b, i {
+                font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <div>
+            <p>Hello prej div</p>
+    </div>
+    <p id='test1' class="para">Paragrafi 1</p>
+    <p id='test2' class='para'>Paragrafi 2
+        <span>Hello</span>
+    </p>
+
+    <b>TEST</b>
+    <i>TEST TJETER</i>
+</body>
+</html>

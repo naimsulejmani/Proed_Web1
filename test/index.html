@@ -47,7 +47,25 @@
                 <th>Total Users</th>
                 <th>2</th>
             </tr>
-    </tfoot>            <!-- tfoot tag ends here -->
+    </tfoot>   
+             <!-- tfoot tag ends here -->
+
+      <hr>
+
+      <button id="myconfirm">Confirm</button>
+<script src="js/asteroid-alert-min.js"></script>
+      <script type="text/javascript">
+      
+          var myconfirm = document.getElementById("myconfirm")
+          myconfirm.addEventListener("click", function(){
+              $confirm("Do you want to delete?", "#E74C3C")
+              .then(() => {
+                  $toast("Deleted", "#E74C3C");
+              })
+          })
+      
+      </script>
+      <hr>
 </body>
 
 </html>
